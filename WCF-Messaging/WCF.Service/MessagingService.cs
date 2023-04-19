@@ -7,10 +7,9 @@ using System.Text;
 
 namespace WCF.Service
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class MessagingService : IMessageService
     {
-        public void GetMessages(string msg)
+        public void GetMessages(byte[] msg)
         {
             Console.WriteLine("Hello There From Server");
             Console.WriteLine("Client Side Message: "+ msg);
