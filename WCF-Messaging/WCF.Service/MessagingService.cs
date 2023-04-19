@@ -12,7 +12,7 @@ namespace WCF.Service
         public void GetMessages(byte[] msg)
         {
             Console.WriteLine("Hello There From Server");
-            Console.WriteLine("Client Side Message: "+ msg);
+            //Console.WriteLine("Client Side Message: "+ msg);
         }
     }
 }

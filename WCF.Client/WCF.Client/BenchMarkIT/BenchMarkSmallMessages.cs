@@ -21,6 +21,7 @@ namespace WCF.Client.BenchMarkIT
         private readonly Byte[] mpBytes3;
         private readonly OptimizedMessage BOM;
         private readonly Byte[] mpBytes4;
+        private readonly MessagingService.MessageServiceClient Client;
 
         public BenchMarkSmallMessages()
         {
@@ -32,22 +33,39 @@ namespace WCF.Client.BenchMarkIT
             mpBytes2 = MessagePackSerializer.Serialize(SOM);
             mpBytes3 = MessagePackSerializer.Serialize(BFM);
             mpBytes4 = MessagePackSerializer.Serialize(BOM);
+            Client = new MessagingService.MessageServiceClient("CustomBinding_IMessageService");
+
         }
 
+
+        // Small Full Sized Message 
         [Benchmark]
         public void MessagePackSerialization_SFM()
         {
             MessagePackSerializer.Serialize(SFM);
         }
         [Benchmark]
+        public void TransmissionTime_UsingWCF_Msg1()
+        {
+            Client.GetMessages(mpBytes1);
+        }
+        [Benchmark]
         public void MessagePackDeserialization_SFM()
         {
             MessagePackSerializer.Deserialize<FullMessage>(mpBytes1);
         }
+
+        // Small Optimized Message 
+
         [Benchmark]
         public void MessagePackSerialization_SOM()
         {
             MessagePackSerializer.Serialize(SOM);
+        }
+        [Benchmark]
+        public void TransmissionTime_UsingWCF_Msg2()
+        {
+            Client.GetMessages(mpBytes2);
         }
         [Benchmark]
         public void MessagePackDeserialization_SOM()
@@ -55,20 +73,35 @@ namespace WCF.Client.BenchMarkIT
             MessagePackSerializer.Deserialize<OptimizedMessage>(mpBytes2);
         }
 
+        // Big Full Sized Message 
+
         [Benchmark]
         public void MessagePackSerialization_BFM()
         {
             MessagePackSerializer.Serialize(BFM);
         }
         [Benchmark]
+        public void TransmissionTime_UsingWCF_Msg3()
+        {
+            Client.GetMessages(mpBytes3);
+        }
+        [Benchmark]
         public void MessagePackDeserialization_BFM()
         {
             MessagePackSerializer.Deserialize<FullMessage>(mpBytes3);
         }
+
+        // Big Optimized Message 
+
         [Benchmark]
         public void MessagePackSerialization_BOM()
         {
             MessagePackSerializer.Serialize(BOM);
+        }
+        [Benchmark]
+        public void TransmissionTime_UsingWCF_Msg4()
+        {
+            Client.GetMessages(mpBytes4);
         }
         [Benchmark]
         public void MessagePackDeserialization_BOM()

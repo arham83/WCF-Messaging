@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>WCF.Client.BenchMarkIT.BenchMarkSmallMessages-20230420-003911</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19044.2846/21H2/November2021Update)
+Intel Xeon CPU E5-1620 0 3.60GHz, 1 CPU, 8 logical and 4 physical cores
+  [Host]     : .NET Framework 4.8 (4.8.4614.0), X86 LegacyJIT
+  DefaultJob : .NET Framework 4.8 (4.8.4614.0), X86 LegacyJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                  Method</th><th>      Mean</th><th>   Error</th><th>  StdDev</th><th>    Median</th>
+</tr>
+</thead><tbody><tr><td>MessagePackSerialization_SFM</td><td>4,025.841 &mu;s</td><td>76.6126 &mu;s</td><td>91.2019 &mu;s</td><td>4,021.531 &mu;s</td>
+</tr><tr><td>TransmissionTime_UsingWCF_Msg1</td><td>36,228.714 &mu;s</td><td>944.3915 &mu;s</td><td>2,739.8509 &mu;s</td><td>35,714.980 &mu;s</td>
+</tr><tr><td>MessagePackDeserialization_SFM</td><td>7,622.124 &mu;s</td><td>152.0886 &mu;s</td><td>270.3373 &mu;s</td><td>7,565.458 &mu;s</td>
+</tr><tr><td>MessagePackSerialization_SOM</td><td>9.327 &mu;s</td><td>0.1831 &mu;s</td><td>0.4855 &mu;s</td><td>9.289 &mu;s</td>
+</tr><tr><td>TransmissionTime_UsingWCF_Msg2</td><td>2,397.316 &mu;s</td><td>93.0337 &mu;s</td><td>265.4303 &mu;s</td><td>2,316.926 &mu;s</td>
+</tr><tr><td>MessagePackDeserialization_SOM</td><td>11.075 &mu;s</td><td>0.2212 &mu;s</td><td>0.5710 &mu;s</td><td>10.835 &mu;s</td>
+</tr><tr><td>MessagePackSerialization_BFM</td><td>314,904.361 &mu;s</td><td>6,213.1072 &mu;s</td><td>12,408.2465 &mu;s</td><td>309,681.250 &mu;s</td>
+</tr><tr><td>TransmissionTime_UsingWCF_Msg3</td><td>894,582.824 &mu;s</td><td>17,228.4834 &mu;s</td><td>45,083.9382 &mu;s</td><td>880,039.150 &mu;s</td>
+</tr><tr><td>MessagePackDeserialization_BFM</td><td>1,097,184.692 &mu;s</td><td>21,461.1237 &mu;s</td><td>17,921.0103 &mu;s</td><td>1,094,939.800 &mu;s</td>
+</tr><tr><td>MessagePackSerialization_BOM</td><td>101.573 &mu;s</td><td>1.7434 &mu;s</td><td>3.4004 &mu;s</td><td>100.472 &mu;s</td>
+</tr><tr><td>TransmissionTime_UsingWCF_Msg4</td><td>2,460.328 &mu;s</td><td>53.1328 &mu;s</td><td>153.3002 &mu;s</td><td>2,430.864 &mu;s</td>
+</tr><tr><td>MessagePackDeserialization_BOM</td><td>131.346 &mu;s</td><td>2.6155 &mu;s</td><td>5.6859 &mu;s</td><td>128.387 &mu;s</td>
+</tr></tbody></table>
+</body>
+</html>
