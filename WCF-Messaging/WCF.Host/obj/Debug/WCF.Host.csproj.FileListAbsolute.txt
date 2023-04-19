@@ -1,0 +1,11 @@
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\obj\Debug\WCF.Host.csproj.AssemblyReference.cache
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\obj\Debug\WCF.Host.csproj.CoreCompileInputs.cache
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\bin\Debug\WCF.Host.exe.config
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\bin\Debug\WCF.Host.exe
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\bin\Debug\WCF.Host.pdb
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\bin\Debug\WCF.Service.dll
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\bin\Debug\WCF.Service.pdb
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\bin\Debug\WCF.Service.dll.config
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\obj\Debug\WCF.Host.csproj.CopyComplete
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\obj\Debug\WCF.Host.exe
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF-Messaging\WCF.Host\obj\Debug\WCF.Host.pdb

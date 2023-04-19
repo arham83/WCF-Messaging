@@ -1,0 +1,6 @@
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF.Client\WCF.Client\obj\Debug\WCF.Client.csproj.CoreCompileInputs.cache
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF.Client\WCF.Client\bin\Debug\WCF.Client.exe.config
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF.Client\WCF.Client\bin\Debug\WCF.Client.exe
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF.Client\WCF.Client\bin\Debug\WCF.Client.pdb
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF.Client\WCF.Client\obj\Debug\WCF.Client.exe
+D:\LayerOne\Project - MessagePack\PonePOC - WCF using MessagePack_v4\WCF.Client\WCF.Client\obj\Debug\WCF.Client.pdb
