@@ -11,6 +11,6 @@ namespace WCF.Service
     public interface IMessageService
     {
         [OperationContract]
-        void GetMessages(string msg);
+        void GetMessages(byte[] msg);
     }
 }

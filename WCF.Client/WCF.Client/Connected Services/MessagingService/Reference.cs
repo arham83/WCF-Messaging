@@ -16,10 +16,10 @@ namespace WCF.Client.MessagingService {
     public interface IMessageService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMessageService/GetMessages", ReplyAction="http://tempuri.org/IMessageService/GetMessagesResponse")]
-        void GetMessages(string msg);
+        void GetMessages(byte[] msg);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMessageService/GetMessages", ReplyAction="http://tempuri.org/IMessageService/GetMessagesResponse")]
-        System.Threading.Tasks.Task GetMessagesAsync(string msg);
+        System.Threading.Tasks.Task GetMessagesAsync(byte[] msg);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -49,11 +49,11 @@ namespace WCF.Client.MessagingService {
                 base(binding, remoteAddress) {
         }
         
-        public void GetMessages(string msg) {
+        public void GetMessages(byte[] msg) {
             base.Channel.GetMessages(msg);
         }
         
-        public System.Threading.Tasks.Task GetMessagesAsync(string msg) {
+        public System.Threading.Tasks.Task GetMessagesAsync(byte[] msg) {
             return base.Channel.GetMessagesAsync(msg);
         }
     }
